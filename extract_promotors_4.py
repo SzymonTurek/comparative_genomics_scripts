@@ -3,8 +3,8 @@ import pandas as pd
 import os
 
 #Pliki excela zamieniłem ręcznie komendą mv na tsv
-input_seqs =  pd.read_csv('/Volumes/One_Touch/promotor_extraction/gene_upregulated.tsv', sep='\t')
-df = pd.DataFrame(input_seqs)
+#input_seqs =  pd.read_csv('/Volumes/One_Touch/promotor_extraction/gene_upregulated.tsv', sep='\t')
+#df = pd.DataFrame(input_seqs)
 
 gene_names = [gene.split(".")[2] for gene in df['Gene']]
 
