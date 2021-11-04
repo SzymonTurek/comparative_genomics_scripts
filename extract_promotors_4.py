@@ -65,7 +65,7 @@ def extract_promotor(input_seqs, path_to_output, regulation_type):
     ctg_positions_in_excel_plus_int = [int(contig_position)-1 for contig_position in ctg_positions_in_excel_plus]
 
     #ctg_positions_in_excel_plus_int = ctg_positions_in_excel_plus_int[:20]
-    with open(os.path.join(path_to_output, "{}_promotor_output_minuses.txt".format(regulation_type)),"w") as f:
+    with open(os.path.join(path_to_output, "{}_promotor_output_pluses.txt".format(regulation_type)),"w") as f:
         
             for seq_record in SeqIO.parse("/Volumes/One_Touch/promotor_extraction/sekwencje_promotorów_hybrydowa_MP.fasta", "fasta"):
                 
